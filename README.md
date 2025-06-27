@@ -16,5 +16,5 @@ The rise of embodied intelligence and multi-modal large language models has led 
 
 ## Demo Video
 <div style="display: block; margin: auto;">
-  <img src="demo.gif" width="400" height="450" >
+  <img src="assets/demo.gif" width="400" height="450" >
 </div>
