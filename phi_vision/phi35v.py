@@ -2,7 +2,7 @@ from PIL import Image
 from transformers import AutoModelForCausalLM, AutoProcessor 
 import torch
 
-model_path = "/data01/kfj_data01/HOME/Bench2Drive/LMDrive-b2d/phi_vision/Phi-3.5-vision-instruct"
+model_path = "Bench2Drive/LMDrive-b2d/phi_vision/Phi-3.5-vision-instruct"
 model_id = "microsoft/Phi-3.5-vision-instruct" 
 
 
@@ -50,10 +50,10 @@ def generate_response(messages, images):
     return response
 
 # 加载图像
-image1 = Image.open("/data01/kfj_data01/DATA/Bench2Drive/Bench2Drive/MergerIntoSlowTrafficV2_Town12_Route1043_Weather3/camera/rgb_front/00050.jpg")
-image2 = Image.open("/data01/kfj_data01/DATA/Bench2Drive/Bench2Drive/MergerIntoSlowTrafficV2_Town12_Route1043_Weather3/camera/rgb_front/00060.jpg")
-image3 = Image.open("/data01/kfj_data01/DATA/Bench2Drive/Bench2Drive/MergerIntoSlowTrafficV2_Town12_Route1043_Weather3/camera/rgb_front/00070.jpg")
-image4 = Image.open("/data01/kfj_data01/DATA/Bench2Drive/Bench2Drive/MergerIntoSlowTrafficV2_Town12_Route1043_Weather3/camera/rgb_front/00080.jpg")
+image1 = Image.open("Bench2Drive/MergerIntoSlowTrafficV2_Town12_Route1043_Weather3/camera/rgb_front/00050.jpg")
+image2 = Image.open("Bench2Drive/MergerIntoSlowTrafficV2_Town12_Route1043_Weather3/camera/rgb_front/00060.jpg")
+image3 = Image.open("Bench2Drive/MergerIntoSlowTrafficV2_Town12_Route1043_Weather3/camera/rgb_front/00070.jpg")
+image4 = Image.open("Bench2Drive/MergerIntoSlowTrafficV2_Town12_Route1043_Weather3/camera/rgb_front/00080.jpg")
 
 # 多图像提示
 # multi_image_prompt = """
