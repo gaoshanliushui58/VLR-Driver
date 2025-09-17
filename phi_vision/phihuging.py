@@ -4,7 +4,7 @@ from transformers import AutoModelForCausalLM
 from transformers import AutoProcessor 
 
 model_id = "microsoft/Phi-3.5-vision-instruct" 
-model_path = "/data01/kfj_data01/HOME/Bench2Drive/LMDrive-b2d/phi_vision/Phi-3.5-vision-instruct"
+model_path = "Bench2Drive/LMDrive-b2d/phi_vision/Phi-3.5-vision-instruct"
 
 # Note: set _attn_implementation='eager' if you don't have flash_attn installed
 model = AutoModelForCausalLM.from_pretrained(
