@@ -2,7 +2,7 @@ from PIL import Image
 from transformers import AutoModelForCausalLM, AutoProcessor 
 import torch
 
-model_path = "Bench2Drive/LMDrive-b2d/phi_vision/Phi-3.5-vision-instruct"
+model_path = "phi_vision/Phi-3.5-vision-instruct"
 model_id = "microsoft/Phi-3.5-vision-instruct" 
 
 

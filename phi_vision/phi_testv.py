@@ -59,8 +59,8 @@ def main(model_path, image_path):
  
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run VisionInstructModel to describe an image.")
-    parser.add_argument("--model_path", type=str, default="Bench2Drive/LMDrive-b2d/phi_vision/Phi-3.5-vision-instruct", help="Path to the model directory.")
-    parser.add_argument("--image_path", type=str, default="Bench2Drive/Bench2Drive/ConstructionObstacleTwoWays_Town12_Route1415_Weather26/camera/rgb_front/00013.jpg", help="Path to the image file.")
+    parser.add_argument("--model_path", type=str, default="phi_vision/Phi-3.5-vision-instruct", help="Path to the model directory.")
+    parser.add_argument("--image_path", type=str, default="Bench2Drive/ConstructionObstacleTwoWays_Town12_Route1415_Weather26/camera/rgb_front/00013.jpg", help="Path to the image file.")
     
     args = parser.parse_args()
     main(args.model_path, args.image_path)
