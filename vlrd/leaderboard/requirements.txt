@@ -1,4 +1,0 @@
-dictor
-requests
-pygame
-
